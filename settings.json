@@ -1,0 +1,64 @@
+{
+    "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings_json.md",
+    "SettingsVersion": 1.2,
+
+    "SimMode": "",
+
+     "Vehicles": {
+        "Car1": {
+            "VehicleType": "PhysXCar",
+            "AutoCreate": true,
+            "Sensors": {
+				    "Distance": {
+         			"SensorType": 5,
+         			"Enabled" : true
+    			},
+                "Left-Lane_Assist": { 
+                    "SensorType": 6,
+                    "Enabled" : true,
+                    "NumberOfChannels": 16,
+                    "RotationsPerSecond": 10,
+                    "PointsPerSecond": 10000,
+                    "X": 0, "Y": 0, "Z": -1,
+                    "Roll": 0, "Pitch": 0, "Yaw" : 0,
+                    "VerticalFOVUpper": -15,
+                    "VerticalFOVLower": -25,
+                    "HorizontalFOVStart": -65,
+                    "HorizontalFOVEnd": -15,
+                    "DrawDebugPoints": true,
+                    "DataFrame": "SensorLocalFrame"
+                },
+                "Right-Lane_Assist": { 
+                    "SensorType": 6,
+                    "Enabled" : true,
+                    "NumberOfChannels": 16,
+                    "RotationsPerSecond": 10,
+                    "PointsPerSecond": 10000,
+                    "X": 0, "Y": 0, "Z": -1,
+                    "Roll": 0, "Pitch": 0, "Yaw" : 0,
+                    "VerticalFOVUpper": -15,
+                    "VerticalFOVLower": -25,
+                    "HorizontalFOVStart": 15,
+                    "HorizontalFOVEnd": 65,
+                    "DrawDebugPoints": true,
+                    "DataFrame": "SensorLocalFrame"
+                },				
+                "Emergancy-Brake": { 
+                   "SensorType": 6,
+                    "Enabled" : true,
+                    "NumberOfChannels": 16,
+                    "RotationsPerSecond": 10,
+                    "PointsPerSecond": 10000,
+                    "X": 0, "Y": 0, "Z": -1,
+                    "Roll": 0, "Pitch": 0, "Yaw" : 0,
+                    "VerticalFOVUpper": 10,
+                    "VerticalFOVLower": -5,
+					"HorizontalFOVStart": -7,
+                    "HorizontalFOVEnd": 7,
+                    "DrawDebugPoints": true,
+                    "DataFrame": "SensorLocalFrame"
+                }
+            }
+        }
+    }
+}
